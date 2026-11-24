@@ -1,0 +1,40 @@
+{
+  "page_size": 4,
+  "requests": [
+    {
+      "request_id": "chat-a",
+      "prefix_pages": [
+        0,
+        1
+      ],
+      "prefix_length": 6,
+      "decode_tokens": 2,
+      "window": 5,
+      "causal": true
+    },
+    {
+      "request_id": "chat-b",
+      "prefix_pages": [
+        2
+      ],
+      "prefix_length": 3,
+      "decode_tokens": 1,
+      "window": 0,
+      "causal": true
+    }
+  ],
+  "pages": {
+    "0": {
+      "session": "chat-a",
+      "valid_tokens": 4
+    },
+    "1": {
+      "session": "chat-a",
+      "valid_tokens": 2
+    },
+    "2": {
+      "session": "chat-b",
+      "valid_tokens": 3
+    }
+  }
+}
