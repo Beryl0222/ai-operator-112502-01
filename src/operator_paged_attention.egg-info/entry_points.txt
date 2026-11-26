@@ -1,0 +1,2 @@
+[console_scripts]
+paged-attention-demo = operator_paged_attention.__main__:main
